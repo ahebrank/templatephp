@@ -4,7 +4,7 @@
 
 This extension is designed for staged deployments with PHP in some templates.  Its goal is to keep you from interacting with the template manager to enable PHP parsing for particular templates.
 
-It hooks the template_fetch_template call, and a quirk is that you'll need to reload a particular page twice for a configuration change to take effect since that hook doesn't allow pre-parsing modificiation to the template settings.
+It hooks the template_fetch_template call. You'll need to reload a particular page twice for a configuration change to take effect since this hook doesn't allow pre-parsing modificiation to the template settings.
 
 ## How to use it
 
