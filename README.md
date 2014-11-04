@@ -11,7 +11,7 @@ It hooks the template_fetch_template call, and a quirk is that you'll need to re
 1. Install the extension in system/expressionengine/third_party/templatephp
 2. Add the `config['template_php']` item to your config.php to specify which template settings to modify.  The item should contain one or more subarrays: 'input' (early PHP processing), 'output' (late PHP processing), and 'disable' (no PHP processing).  Templates should be specified as 'group/name'.  For example:
 
-`
+```php
 $config['template_php'] = array(
   'input' => array('events/view',
                     'helpers/get-events',
@@ -26,7 +26,7 @@ $config['template_php'] = array(
                     'helpers/date-calc'),
   'disable' => array()
 );
-`
+```
 
 ## Performance considerations
 
